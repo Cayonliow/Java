@@ -1,0 +1,14 @@
+package pig_latin;
+
+public class PigLatin {
+	@SuppressWarnings("null")
+	public static void main(String[] args) {
+		String[] data = null;
+		for (int i = 0; i < args.length; i++)
+		{
+			data[i] = args[i];
+			System.out.println("cayon here= "+data[i]);
+		}
+
+	}
+}

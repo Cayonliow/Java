@@ -1,0 +1,7 @@
+package pig_latin;
+
+public class PigLatin {
+	public static void main(String[] args) {
+		System.out.println(args.length);
+	}
+}
