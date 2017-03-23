@@ -11,7 +11,7 @@ public class hw2 {
 		Scanner scannerObj = new Scanner(System.in);
 
 		int a,b,c;
-	
+
 		a = scannerObj.nextInt();
 		scannerObj.nextLine();
 	
@@ -23,7 +23,7 @@ public class hw2 {
 	
 		String decimalPlaces = scannerObj.next();
 		scannerObj.nextLine();
-	
+		
 		double x1,x2;
 	
 		x1 = (-b + Math.sqrt(Math.pow(b,2.0)-4*a*c))/(2*a);
@@ -38,12 +38,12 @@ public class hw2 {
 			if(x1>x2)
 			{
 				System.out.println(str1);
-				System.out.println(str2);
+				System.out.print(str2);
 			}
 			else
 			{
 				System.out.println(str2);
-				System.out.println(str1);
+				System.out.print(str1);
 			}
 		}
 		
@@ -52,12 +52,12 @@ public class hw2 {
 			if(x1>x2)
 			{
 				System.out.println(str2);
-				System.out.println(str1);
+				System.out.print(str1);
 			}
 			else
 			{
 				System.out.println(str1);
-				System.out.println(str2);
+				System.out.print(str2);
 			}
 		}
 		

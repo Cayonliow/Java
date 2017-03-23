@@ -1,0 +1,37 @@
+package prime;
+
+import java.util.*;
+
+public class prime {
+	
+	public static void main(String[] args) {
+		
+		boolean special[] = new boolean[100000001];
+		
+		for(int i=0;i<100000001;i++) {
+			special[i] = false;
+		}
+		
+		special[1] = true;
+		
+		for(int i=2;i<100000001;i=i+2) {
+			special[i] = true;
+		}
+		
+		for(int j=3;j<100000001;j=j+3) {
+			special[j] = true;
+		}
+		
+		for(int t=5;t<100000001;t=t+5) {
+			special[t] = true;
+		}
+		
+		Scanner scanner = new Scanner(System.in);
+		String instruction = scanner.nextLine();
+		
+		long number = Integer.valueOf(instruction.substring(2));
+		
+		System.out.println(number);
+		
+	}
+}

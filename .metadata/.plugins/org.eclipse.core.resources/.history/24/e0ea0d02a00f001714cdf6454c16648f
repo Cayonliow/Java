@@ -1,0 +1,31 @@
+package prime;
+
+public class prime {
+	
+	public static void main(String[] args) {
+		
+		boolean prime[] = new boolean[100000001];
+		for(int i=2;i<100000001;i=i+2) {
+			prime[i] = false;
+		}
+		
+		for(int j=3;j<100000001;j=j+3) {
+			prime[j] = false;
+		}
+		
+		for(int t=5;t<100000001;t=t+5) {
+			prime[t] = false;
+		}
+		
+		/*for(int y=2;y<100000001;y++) {
+			if(prime[y]!=false)
+			prime[y] = true;
+		}*/
+		
+		if(prime[17]==true) {
+			System.out.println("Cayon");
+		}
+		
+		//System.out.println("Cayon");
+	}
+}

@@ -1,0 +1,34 @@
+package lab2;
+import java.util.StringTokenizer;
+
+public class farm {
+	/*public static void main(String[] args) {
+		Duck duck = new Duck(true);
+		
+		boolean canTheDuckFly = duck.canfly;
+		if(canTheDuckFly == true) {
+			System.out.println("the duck can fly");
+		}
+		
+		duck.quack();
+		String feed = duck.eat("burger");
+		System.out.println(feed);
+		
+		int expectedDistance = 10;
+		duck.swim(expectedDistance);
+		System.out.println("the Expected distance = " + expectedDistance);
+	}*/
+	
+	public static void main(String[] args) {
+		String in = "Hello,World,Java";
+		StringTokenizer st = new StringTokenizer(in,",");
+		while(st.hasMoreTokens()) {
+			String token = st.nextToken();
+			System.out.println(token);
+		}
+		
+		int sum = Duck.add(1, 4);
+		System.out.println(sum);
+		
+	}
+}

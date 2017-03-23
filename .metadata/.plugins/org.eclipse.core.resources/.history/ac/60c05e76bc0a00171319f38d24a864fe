@@ -1,0 +1,16 @@
+package lab2;
+
+public class farm {
+	public static void main(String[] args) {
+		Duck duck = new Duck();
+		
+		boolean canTheDuckFly = duck.canfly;
+		if(canTheDuckFly == true) {
+			System.out.println("the duck can fly");
+		}
+		
+		duck.quack();
+		String feed = duck.eat("burger");
+		System.out.println(feed);
+	}
+}
